@@ -1,0 +1,19 @@
+$color-background: #201D1D;
+$color-white: #fff;
+$color-blue: #008ECC;
+$color-cinza: #777474;
+$color-bg-input: #77747450;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+body /* corpo html  */
+{
+    background-image: url(../img/FVPcF1dXoAcr7M-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

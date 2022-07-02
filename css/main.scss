@@ -1,0 +1,165 @@
+$color-background: #201D1D;
+$color-white: #fff;
+$color-blue: #008ECC;
+$color-cinza: #777474;
+$color-bg-input: #77747450;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto';
+   text-decoration: none;
+}
+
+body {
+   display: flex;
+   justify-content: right;
+   position: relative;
+   right: 7rem;
+}
+
+/* video backgrond */
+.bg_video {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   z-index: -1000;
+   background-size: cover;
+}
+
+/* container pai login */
+.area-login {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   width: 30rem;
+   height: 40.78rem;
+   background-color: $color-background;
+
+   border-bottom-left-radius: 15rem;
+   border-bottom-right-radius: 1rem;
+
+   /* logo bmw */
+   #logo {
+      width: 8rem;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+   }
+
+   form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      input {
+         width: 15rem;
+         height: 2.5rem;
+         background: $color-bg-input;
+         color: white;
+
+         border: none;
+         outline: none;
+         padding: .3rem;
+
+         font-size: 12pt;
+
+         ::placeholder {
+            color: rgb(119, 116, 116);
+         }
+
+         :focus {
+            border-bottom: 3px solid $color-white;
+         }
+      }
+
+      div {
+         display: flex;
+
+         img {
+            width: 1.4rem;
+         }
+
+         .icones-olho {
+            position: relative;
+            top: .5rem;
+            right: 2rem;
+
+            img {
+               position: absolute;
+               cursor: pointer;
+            }
+         }
+      }
+   }
+
+   /* button login  */
+   #btn-form{
+      background-color: $color-blue;
+      color: $color-white;
+
+      width: 15rem;
+      height: 2.5rem;
+      border: none;
+      border-radius: 50px;
+      margin-top: 1.4rem;
+      margin-bottom: 1.3rem;
+
+      font-size: 15pt;
+      cursor: pointer;
+      transition: 0.3s;
+      :hover{
+         background-color: $color-white;
+         color: $color-blue;
+      }
+   }
+
+   #or {
+      color: $color-cinza;
+      margin-bottom: 2rem;
+   }
+
+   /* icones facebook google login  */
+   .login-alternativo {
+      display: flex;
+      gap: 1.7rem;
+      margin-bottom: 2rem;
+
+      img {
+         width: 2rem;
+      }
+   }
+
+   /* usuario register*/
+   .createCont {
+      color: $color-cinza;
+      font-size: 10pt;
+      text-align: left;
+      a {
+         color: $color-blue;
+         font-size: 10pt;
+         :hover {
+            text-decoration: underline;
+         }
+      }
+   }
+}
+
+/* área para se registrar */
+.area-register {
+   display: none;
+   flex-direction: column;
+   align-items: center;
+
+   width: 30rem;
+   height: 40.78rem;
+   background-color: $color-background;
+
+   border-bottom-left-radius: 15rem;
+   border-bottom-right-radius: 1rem;
+}
