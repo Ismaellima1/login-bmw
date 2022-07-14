@@ -1,65 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- import styles index.css   -->
-	<link rel="stylesheet" href="./css/main.css">
-	<!-- import font Roboto  -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-
-	<title>Login BMW</title>
-</head>
-
-<body>
-	<!-- video background  -->
-	<video autoplay muted loop src="./img/bmw-video-background.mp4" class="bg_video"></video>
-	
-	<!-- area para fazer login  -->
-	<section class="area-login">
-		<!-- logo bmw -->
-		<div>
-			<a href="#"><img id="logo" src="./img/logo-bmw-512.png" alt="logo da empresa BMW"></a>
-		</div>
-
-		<!-- campo de entrada de dados login -->
-		<form>
-			<input type="text" placeholder="Username" id="input-user" required>
-			
-			<div class="olho-viewpass">
-
-				<input type="password" placeholder="Password" id="input-pass" required>
-				<div class="icones-olho">
-					<img src="./img/olho-slash.png" alt="" onclick="showOcultPass()" id="icon-olho">
-				</div>
-
-			</div>
-
-			<input type="submit" value="Login" id="btn-form" onclick="btnLogin()">
-		</form>
-
-
-		<p id="or">OR</p>
-
-		<!-- icones de logins alternativos -->
-		<div class="login-alternativo">
-			<a href="#"><img src="./img/icon-facebook.png" alt=""></a>
-			<a href="#"><img src="./img/google-icon.png" alt=""></a>
-		</div>
-
-		<!-- para criar uma conta -->
-		<p class="createCont">I don't have an account <a href="#" onclick="registrarOrLogin()">register</a></p>
-	</section>
-
-	<!-- area para se registrar -->
-	<section class="area-register">
-
-	</section>
-
-	<script src="./js/index.js"></script>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import styles index.css   -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- import font Roboto  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login BMW</title>
+  </head>
+  <body>
+    <!-- video background  -->
+    <video
+      autoplay
+      muted
+      loop
+      src="./img/bmw-video-background.mp4"
+      class="bg_video"
+    ></video>
+    <!-- area para fazer login  -->
+    <section class="area-login">
+      <!-- logo bmw -->
+      <div>
+        <a href="#"
+          ><img
+            id="logo"
+            src="./img/logo-bmw-512.png"
+            alt="logo da empresa BMW"
+        /></a>
+      </div>
+      <!-- campo de entrada de dados login -->
+      <form>
+        <input type="text" placeholder="Username" id="input-user" required />
+        <div class="olho-viewpass">
+          <input
+            type="password"
+            placeholder="Password"
+            id="input-pass"
+            required
+          />
+          <div class="icones-olho">
+            <img
+              src="./img/olho-slash.png"
+              alt=""
+              onclick="showOcultPass()"
+              id="icon-olho"
+            />
+          </div>
+        </div>
+        <input type="submit" value="Login" id="btn-form" onclick="btnLogin()" />
+      </form>
+      <p id="or">OR</p>
+      <!-- icones de logins alternativos -->
+      <div class="login-alternativo">
+        <a href="#"><img src="./img/icon-facebook.png" alt="" /></a>
+        <a href="#"><img src="./img/google-icon.png" alt="" /></a>
+      </div>
+      <!-- para criar uma conta -->
+      <p class="createCont">
+        I don't have an account
+        <a href="#" onclick="registrarOrLogin()">register</a>
+      </p>
+    </section>
+    <!-- area para se registrar -->
+    <section class="area-register"></section>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
